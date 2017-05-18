@@ -1,0 +1,154 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "A",
+      "pic": "app/assets/images/user1.png",
+      "password": "pass",
+      "username": "a",
+      "email": "a@domain.com",
+      "todolist": [
+        {
+          "title": "TitleA",
+          "description": "Anim aliquip incididunt adipisicing ex aliqua.",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "B",
+      "pic": "app/assets/images/user2.png",
+      "password": "pass",
+      "username": "b",
+      "email": "b@domain.com",
+      "todolist": [
+        {
+          "title": "TitleB",
+          "description": "Anim aliquip incididunt.",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "c",
+      "pic": "app/assets/images/user2.png",
+      "password": "pass",
+      "username": "c",
+      "email": "c@domain.com",
+      "todolist": [
+        {
+          "title": "TitleC",
+          "description": "lorem ipsum dollar",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "D",
+      "pic": "app/assets/images/user1.png",
+      "password": "pass",
+      "username": "d",
+      "email": "d@domain.com",
+      "todolist": [
+        {
+          "title": "TitleD",
+          "description": "lorem ipsum dollar blahh blahhh",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "id":5,
+      "name": "E",
+      "pic": "app/assets/images/user1.png",
+      "password": "pass",
+      "username": "e",
+      "email": "e@domain.com",
+      "todolist": [
+        {
+          "title": "TitleE",
+          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "F",
+      "pic": "app/assets/images/user2.png",
+      "password": "pass",
+      "username": "f",
+      "email": "f@domain.com",
+      "todolist": [
+        {
+          "title": "TitleF",
+          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "G",
+      "pic": "app/assets/images/user1.png",
+      "password": "pass",
+      "username": "g",
+      "email": "g@domain.com",
+      "todolist": [
+        {
+          "title": "TitleG",
+          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "H",
+      "pic": "app/assets/images/user2.png",
+      "password": "pass",
+      "username": "h",
+      "email": "h@domain.com",
+      "todolist": [
+        {
+          "title": "TitleH",
+          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "I",
+      "pic": "app/assets/images/user2.png",
+      "password": "pass",
+      "username": "i",
+      "email": "i@domain.com",
+      "todolist": [
+        {
+          "title": "TitleI",
+          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "K",
+      "pic": "app/assets/images/user1.png",
+      "password": "pass",
+      "username": "k",
+      "email": "k@domain.com",
+      "todolist": [
+        {
+          "title": "TitleK",
+          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
+          "status": "complete"
+        }
+      ]
+    }
+  ]
+}

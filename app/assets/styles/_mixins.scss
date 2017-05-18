@@ -1,0 +1,16 @@
+@mixin clearfix() {
+  display : table;
+  content : '';
+  clear : both;
+}
+
+@mixin mycontainer ( $top, $left, $bottom, $right ) {
+  width : $container-width;
+  margin : 0px auto;
+  padding : {
+    top : $top;
+    left : $left;
+    bottom : $bottom;
+    right : $right;
+  }
+}

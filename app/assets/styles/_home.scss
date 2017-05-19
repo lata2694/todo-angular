@@ -1,0 +1,16 @@
+home-directive {
+  @include clearfix();
+  @include mycontainer( 30px, 0px, 10px, 0px );
+  text-align: -webkit-center;
+  margin-top: 120px;
+
+  table {
+    width: 100%;
+  }
+
+  td {
+    li {
+      text-align: center;
+    }
+  }
+}

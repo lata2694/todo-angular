@@ -1,9 +1,8 @@
 {
   "users": [
     {
-      "id": 1,
       "name": "A",
-      "pic": "app/assets/images/user1.png",
+      "pic": "assets/images/user1.png",
       "password": "pass",
       "username": "a",
       "email": "a@domain.com",
@@ -12,13 +11,42 @@
           "title": "TitleA",
           "description": "Anim aliquip incididunt adipisicing ex aliqua.",
           "status": "pending"
+        },
+        {
+          "title": "TitleA",
+          "description": "Anim aliquip incididunt adipisicing ex aliqua.",
+          "status": "pending"
+        },
+        {
+          "title": "TitleA",
+          "description": "Anim aliquip incididunt adipisicing ex aliqua.",
+          "status": "pending"
+        },
+        {
+          "title": "TitleA",
+          "description": "Anim aliquip incididunt adipisicing ex aliqua.",
+          "status": "pending"
+        },
+        {
+          "title": "TitleA",
+          "description": "Anim aliquip incididunt adipisicing ex aliqua.",
+          "status": "pending"
+        },
+        {
+          "title": "TitleA",
+          "description": "Anim aliquip incididunt adipisicing ex aliqua.",
+          "status": "pending"
+        },
+        {
+          "title": "TitleA1",
+          "description": "Anim aliquip incididunt adipisicing ex aliqua.",
+          "status": "complete"
         }
       ]
     },
     {
-      "id": 2,
       "name": "B",
-      "pic": "app/assets/images/user2.png",
+      "pic": "assets/images/user2.png",
       "password": "pass",
       "username": "b",
       "email": "b@domain.com",
@@ -31,9 +59,8 @@
       ]
     },
     {
-      "id": 3,
       "name": "c",
-      "pic": "app/assets/images/user2.png",
+      "pic": "assets/images/user2.png",
       "password": "pass",
       "username": "c",
       "email": "c@domain.com",
@@ -46,9 +73,8 @@
       ]
     },
     {
-      "id": 4,
       "name": "D",
-      "pic": "app/assets/images/user1.png",
+      "pic": "assets/images/user1.png",
       "password": "pass",
       "username": "d",
       "email": "d@domain.com",
@@ -61,9 +87,8 @@
       ]
     },
     {
-      "id":5,
       "name": "E",
-      "pic": "app/assets/images/user1.png",
+      "pic": "assets/images/user1.png",
       "password": "pass",
       "username": "e",
       "email": "e@domain.com",
@@ -76,9 +101,8 @@
       ]
     },
     {
-      "id": 6,
       "name": "F",
-      "pic": "app/assets/images/user2.png",
+      "pic": "assets/images/user2.png",
       "password": "pass",
       "username": "f",
       "email": "f@domain.com",
@@ -91,9 +115,8 @@
       ]
     },
     {
-      "id": 7,
       "name": "G",
-      "pic": "app/assets/images/user1.png",
+      "pic": "assets/images/user1.png",
       "password": "pass",
       "username": "g",
       "email": "g@domain.com",
@@ -106,9 +129,8 @@
       ]
     },
     {
-      "id": 8,
       "name": "H",
-      "pic": "app/assets/images/user2.png",
+      "pic": "assets/images/user2.png",
       "password": "pass",
       "username": "h",
       "email": "h@domain.com",
@@ -121,9 +143,8 @@
       ]
     },
     {
-      "id": 9,
       "name": "I",
-      "pic": "app/assets/images/user2.png",
+      "pic": "assets/images/user2.png",
       "password": "pass",
       "username": "i",
       "email": "i@domain.com",
@@ -136,9 +157,8 @@
       ]
     },
     {
-      "id": 10,
       "name": "K",
-      "pic": "app/assets/images/user1.png",
+      "pic": "assets/images/user1.png",
       "password": "pass",
       "username": "k",
       "email": "k@domain.com",

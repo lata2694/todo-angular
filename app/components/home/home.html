@@ -1,5 +1,5 @@
-<div ng-controller="homeController">
-    <section>
+<div ng-controller="homeController as vm">
+    <section ng-repeat="user in vm.user track by $index">
         <table>
             <tr>
                 <th></th>
@@ -12,20 +12,20 @@
             </tr>
 
             <tr>
-                <td rowspan="2">
-                    <img src="data.proPic" alt="Profile pic">
-                    <p>name</p>
+                <td>
+                    <img src={{user.proPic}} alt="Profile pic">
+                    <p>{{ user.userName }}</p>
                 </td>
 
                 <td>
-                    <li>
-                        list
+                    <li ng-repeat="complete in user.todolist.complete track by $index">
+                        {{ complete.title }}
                     </li>
                 </td>
 
                 <td>
-                    <li>
-                        list
+                    <li ng-repeat="incomplete in user.todolist.incomplete track by $index">
+                        {{ incomplete.title }}
                     </li>
                 </td>
             </tr>

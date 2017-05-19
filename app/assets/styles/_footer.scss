@@ -1,0 +1,18 @@
+footer-directive {
+  @include clearfix();
+  @include mycontainer( 10px, 0px, 30px, 0px );
+  border-top: 1px solid black;
+  text-align: -webkit-center;
+
+  ul {
+    @include clearfix;
+  }
+
+  a {
+    color: $link-color;
+
+    &:hover {
+      color:red;
+    }
+  }
+}

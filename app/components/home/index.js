@@ -3,9 +3,9 @@
  */
 
 var homeDirective = require ( './homeDirective' ) ;
+var homeFactory = require('./factories/index');
 var homeController = require ( './homeController' ) ;
 
 exports.homeDirective = homeDirective ;
+exports.homeFactory = homeFactory;
 exports.homeController = homeController ;
-
-require('./factories/index');

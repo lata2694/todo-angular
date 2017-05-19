@@ -2,6 +2,10 @@ header-directive {
   @include clearfix();
   @include mycontainer( 30px, 0px, 10px, 0px );
   border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 4%;
+  background: #fff;
 
   .logo {
     a {
@@ -32,54 +36,6 @@ header-directive {
     .sign-in {
       padding-right:20px;
       border-right: 1px solid;
-    }
-  }
-}
-
-.list {
-  list-style-type: none;
-
-  li {
-    float:left;
-    margin: 10px;
-  }
-}
-
-a {
-  text-decoration: none;
-}
-
-home-directive {
-  @include clearfix();
-  @include mycontainer( 30px, 0px, 10px, 0px );
-  text-align: -webkit-center;
-
-  table {
-    width: 100%;
-
-    td {
-      li {
-        text-align: center;
-      }
-    }
-  }
-}
-
-footer-directive {
-  @include clearfix();
-  @include mycontainer( 10px, 0px, 30px, 0px );
-  border-top: 1px solid black;
-  text-align: -webkit-center;
-
-  ul {
-    @include clearfix;
-
-    a {
-      color: $link-color;
-
-      &:hover {
-        color:red;
-      }
     }
   }
 }

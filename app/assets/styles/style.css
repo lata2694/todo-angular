@@ -1,3 +1,54 @@
+.overlay {
+  opacity: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background: url("../../assets/images/overlay.jpg") center;
+  background-size: cover;
+  animation: splash 7s forwards;
+  /*After the animation ends (determined by animation-iteration-count),
+  the animation will apply the property values for the time the animation ended*/
+  z-index: 2; }
+  .overlay .message {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    padding: 10px; }
+
+@-webkit-keyframes splash {
+  0% {
+    opacity: 0;
+    top: 0;
+    left: 0; }
+  20% {
+    opacity: 1;
+    top: 0;
+    left: 0; }
+  60% {
+    opacity: 1;
+    top: 0;
+    left: 0; }
+  99% {
+    top: 0;
+    left: 0; }
+  100% {
+    opacity: 0;
+    top: -999em;
+    left: -999em; } }
+.list {
+  list-style-type: none; }
+  .list li {
+    float: left;
+    margin: 10px; }
+
+a {
+  text-decoration: none; }
+
 header-directive {
   display: table;
   content: '';
@@ -8,7 +59,11 @@ header-directive {
   padding-left: 0px;
   padding-bottom: 10px;
   padding-right: 0px;
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 4%;
+  background: #fff; }
   header-directive .logo a {
     float: left;
     width: 161px;
@@ -30,15 +85,6 @@ header-directive {
       padding-right: 20px;
       border-right: 1px solid; }
 
-.list {
-  list-style-type: none; }
-  .list li {
-    float: left;
-    margin: 10px; }
-
-a {
-  text-decoration: none; }
-
 home-directive {
   display: table;
   content: '';
@@ -49,11 +95,12 @@ home-directive {
   padding-left: 0px;
   padding-bottom: 10px;
   padding-right: 0px;
-  text-align: -webkit-center; }
+  text-align: -webkit-center;
+  margin-top: 120px; }
   home-directive table {
     width: 100%; }
-    home-directive table td li {
-      text-align: center; }
+  home-directive td li {
+    text-align: center; }
 
 footer-directive {
   display: table;
@@ -71,9 +118,9 @@ footer-directive {
     display: table;
     content: '';
     clear: both; }
-    footer-directive ul a {
-      color: darkgreen; }
-      footer-directive ul a:hover {
-        color: red; }
+  footer-directive a {
+    color: darkgreen; }
+    footer-directive a:hover {
+      color: red; }
 
 /*# sourceMappingURL=style.css.map */

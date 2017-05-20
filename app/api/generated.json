@@ -1,170 +1,215 @@
 {
   "users": [
     {
-      "name": "A",
+      "name": "Deepanshu",
       "pic": "assets/images/user1.png",
       "password": "pass",
-      "username": "a",
+      "username": "Deepanshu",
       "email": "a@domain.com",
       "todolist": [
         {
-          "title": "TitleA",
+          "title": "Study",
           "description": "Anim aliquip incididunt adipisicing ex aliqua.",
           "status": "pending"
         },
         {
-          "title": "TitleA",
+          "title": "Playing Soccer",
+          "description": "Anim aliquip incididunt adipisicing ex aliqua.",
+          "status": "complete"
+        },
+        {
+          "title": "Part time job",
           "description": "Anim aliquip incididunt adipisicing ex aliqua.",
           "status": "pending"
         },
         {
-          "title": "TitleA",
+          "title": "Movie",
+          "description": "Anim aliquip incididunt adipisicing ex aliqua.",
+          "status": "complete"
+        },
+        {
+          "title": "Bike ride",
           "description": "Anim aliquip incididunt adipisicing ex aliqua.",
           "status": "pending"
         },
         {
-          "title": "TitleA",
+          "title": "Road Trip",
           "description": "Anim aliquip incididunt adipisicing ex aliqua.",
           "status": "pending"
         },
         {
-          "title": "TitleA",
-          "description": "Anim aliquip incididunt adipisicing ex aliqua.",
-          "status": "pending"
-        },
-        {
-          "title": "TitleA",
-          "description": "Anim aliquip incididunt adipisicing ex aliqua.",
-          "status": "pending"
-        },
-        {
-          "title": "TitleA1",
+          "title": "Cooking",
           "description": "Anim aliquip incididunt adipisicing ex aliqua.",
           "status": "complete"
         }
       ]
     },
     {
-      "name": "B",
+      "name": "Chitra",
       "pic": "assets/images/user2.png",
       "password": "pass",
-      "username": "b",
+      "username": "Chitra",
       "email": "b@domain.com",
       "todolist": [
         {
-          "title": "TitleB",
+          "title": "Designing",
           "description": "Anim aliquip incididunt.",
           "status": "pending"
-        }
-      ]
-    },
-    {
-      "name": "c",
-      "pic": "assets/images/user2.png",
-      "password": "pass",
-      "username": "c",
-      "email": "c@domain.com",
-      "todolist": [
+        },
         {
-          "title": "TitleC",
-          "description": "lorem ipsum dollar",
+          "title": "Modeling",
+          "description": "Anim aliquip incididunt.",
           "status": "complete"
         }
       ]
     },
     {
-      "name": "D",
+      "name": "Mamta",
+      "pic": "assets/images/user2.png",
+      "password": "pass",
+      "username": "Mamta",
+      "email": "c@domain.com",
+      "todolist": [
+        {
+          "title": "Cooking",
+          "description": "lorem ipsum dollar",
+          "status": "complete"
+        },
+        {
+          "title": "Readding Books",
+          "description": "lorem ipsum dollar",
+          "status": "complete"
+        },
+        {
+          "title": "Singing",
+          "description": "lorem ipsum dollar",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "name": "Sachin",
       "pic": "assets/images/user1.png",
       "password": "pass",
-      "username": "d",
+      "username": "Sachin",
       "email": "d@domain.com",
       "todolist": [
         {
-          "title": "TitleD",
+          "title": "Appointment with doc",
           "description": "lorem ipsum dollar blahh blahhh",
           "status": "complete"
         }
       ]
     },
     {
-      "name": "E",
+      "name": "Vaibhav",
       "pic": "assets/images/user1.png",
       "password": "pass",
-      "username": "e",
+      "username": "vaibhav",
       "email": "e@domain.com",
       "todolist": [
         {
-          "title": "TitleE",
+          "title": "Studying",
           "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
           "status": "pending"
-        }
-      ]
-    },
-    {
-      "name": "F",
-      "pic": "assets/images/user2.png",
-      "password": "pass",
-      "username": "f",
-      "email": "f@domain.com",
-      "todolist": [
+        },
         {
-          "title": "TitleF",
-          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "name": "G",
-      "pic": "assets/images/user1.png",
-      "password": "pass",
-      "username": "g",
-      "email": "g@domain.com",
-      "todolist": [
-        {
-          "title": "TitleG",
+          "title": "Going to pet store",
           "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
           "status": "complete"
         }
       ]
     },
     {
-      "name": "H",
+      "name": "Ruby",
       "pic": "assets/images/user2.png",
       "password": "pass",
-      "username": "h",
+      "username": "Ruby",
+      "email": "f@domain.com",
+      "todolist": [
+        {
+          "title": "shopping",
+          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "name": "Gaurav",
+      "pic": "assets/images/user1.png",
+      "password": "pass",
+      "username": "gaurav",
+      "email": "g@domain.com",
+      "todolist": [
+        {
+          "title": "Dentist's Appointment",
+          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
+          "status": "complete"
+        },
+        {
+          "title": "Zumba class",
+          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
+          "status": "pending"
+        },
+        {
+          "title": "Apply for army",
+          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "name": "Vibha",
+      "pic": "assets/images/user2.png",
+      "password": "pass",
+      "username": "Vibha",
       "email": "h@domain.com",
       "todolist": [
         {
-          "title": "TitleH",
+          "title": "Tutions",
+          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
+          "status": "pending"
+        },
+        {
+          "title": "Science Project",
           "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
           "status": "pending"
         }
       ]
     },
     {
-      "name": "I",
+      "name": "Sneha",
       "pic": "assets/images/user2.png",
       "password": "pass",
-      "username": "i",
+      "username": "Sneha",
       "email": "i@domain.com",
       "todolist": [
         {
-          "title": "TitleI",
+          "title": "Voluntary service",
           "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
           "status": "pending"
         }
       ]
     },
     {
-      "name": "K",
+      "name": "Karan",
       "pic": "assets/images/user1.png",
       "password": "pass",
-      "username": "k",
+      "username": "karan",
       "email": "k@domain.com",
       "todolist": [
         {
-          "title": "TitleK",
+          "title": "Appply for job",
+          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
+          "status": "complete"
+        },
+        {
+          "title": "Movie",
+          "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
+          "status": "pending"
+        },
+        {
+          "title": "Grocery Shopping",
           "description": "lorem ipsum dollarmjkjklk jkhjkjk jnjklj",
           "status": "complete"
         }

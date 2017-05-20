@@ -5,6 +5,7 @@
 }
 
 @mixin mycontainer ( $top, $left, $bottom, $right ) {
+  box-sizing:border-box;
   width : $container-width;
   margin : 0px auto;
   padding : {
@@ -19,4 +20,16 @@
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+}
+
+@mixin section-before-after {
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 8px;
 }

@@ -1,29 +1,33 @@
 <div ng-controller="homeController as vm">
     <section ng-repeat="user in vm.user track by $index">
+        <img src="../../assets/images/thumb.png" alt="" class="thumb">
         <table>
             <tr>
-                <th></th>
                 <th>
+                </th>
+                <th class="completed">
                     Completed Tasks
                 </th>
-                <th>
+                <th class="incomplete">
                     Incomplete Tasks
                 </th>
             </tr>
 
             <tr>
-                <td>
-                    <img src={{user.proPic}} alt="Profile pic">
-                    <p>{{ user.userName }}</p>
+                <td class="user-info">
+                    <a target="_blank" href={{user.proPic}}>
+                        <img src={{user.proPic}} alt="Profile pic">
+                    </a>
+                    <p><a href="">{{ user.userName }}</a></p>
                 </td>
 
-                <td>
+                <td class="todo-list">
                     <li ng-repeat="complete in user.todolist.complete track by $index">
                         {{ complete.title }}
                     </li>
                 </td>
 
-                <td>
+                <td class="todo-list">
                     <li ng-repeat="incomplete in user.todolist.incomplete track by $index">
                         {{ incomplete.title }}
                     </li>
@@ -31,4 +35,6 @@
             </tr>
         </table>
     </section>
+
+    <button ng-click="vm.loadMore()" id="more-button">More Suggestions</button>
 </div>

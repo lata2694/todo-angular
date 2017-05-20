@@ -1,18 +1,59 @@
 footer-directive {
   @include clearfix();
-  @include mycontainer( 10px, 0px, 30px, 0px );
-  border-top: 1px solid black;
+  @include mycontainer( 10px, 0px, 10px, 0px );
+  width:100%;
+  background: $footer-background;
   text-align: -webkit-center;
+  color: $link-color;
 
-  ul {
-    @include clearfix;
+  .link {
+    @extend .list;
+    clear:both;
+    margin:0 auto;
+    display: inline-block;
+
+    a {
+      display: block;
+      padding:12px;
+    }
+
+    li:nth-child(1) {
+      background: url("../../assets/images/links.png") 0 0;
+    }
+
+    li:nth-child(2) {
+      background: url("../../assets/images/links.png")-38px 0;
+    }
+
+    li:nth-child(3) {
+      background: url("../../assets/images/links.png") -77px 0;
+    }
+
+    li:nth-child(4) {
+      background: url("../../assets/images/links.png") 24px 0;
+    }
   }
 
-  a {
-    color: $link-color;
+  .footer-menu {
+    .list {
+      display: inline-block;
+      margin:20px;
+      li {
+        float : none;
+      }
+      a {
+        color:$link-color;
 
-    &:hover {
-      color:red;
+        &:hover {
+          color:$hover-color;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    p {
+      margin: 10px;
     }
   }
 }

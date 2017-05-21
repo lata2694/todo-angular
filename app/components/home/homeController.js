@@ -30,12 +30,14 @@ function homeController($log, filterFactory) {
         if (vm.limit <= 10) {
             vm.limit = vm.limit + 3;
             viewUsers(vm.limit);
-        }
 
-        else {
-            var myButton = document.getElementById('more-button')
-            myButton.disabled = true;
-            myButton.style.background = "grey";
+            if( vm.limit == 12 ) {
+                var loadButton = document.getElementById('more-button')
+                loadButton.disabled = true;
+                loadButton.style.background = "grey";
+                loadButton.style.border = "grey";
+                loadButton.style.color = "darkgrey";
+            }
         }
     }
 }

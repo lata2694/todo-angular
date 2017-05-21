@@ -5,53 +5,56 @@
 angular.module('app')
     .factory('modelFactory', modelFactory);
 
-modelFactory.$inject = ['$log', '$http', 'apiConstant'];
+modelFactory.$inject = ['$log', 'dataFactory'];
 
-function modelFactory($log, Ajax, api) {
+function modelFactory($log, dataFactory) {
 
     var service = {};
     service.userCount = 0;
-    service.getData = getData;
+    service.modeling = modeling;
     return service;
 
     //////////////////////////////////
-    function getData() {
+    function modeling() {
 
-        return Ajax.get(api.url)
-            .then(function (response) {
-                $log.debug("response---", response);
-                $log.debug("data---", response.data);
+        return (dataFactory
+                .getData()
+                .then(function (userList) {
 
-                return userModel(response.data.users);
-            });
+                    $log.debug("userList---------", userList);
+                    return (userModel( userList ));
+                }) );
 
         function userModel(userList) {
-            $log.debug("userList-----", userList);
+            $log.debug("userList in userModel-----", userList);
 
-            return userList.map(function (oneUser) {
-
-                $log.debug("main Lists's user----", oneUser);
-                return new User(oneUser);
+            return userList.map(function (user) {
+                $log.debug("main Lists's user----", user);
+                return new Users(user);
             });
         }
 
-        function User(oneUser) {
+        function Users(user) {
             this.id = (function () {
                 service.userCount = service.userCount + 1;
                 return ( service.userCount );
             }());
-            this.name = oneUser.name;
-            this.proPic = oneUser.pic;
-            this.pass = oneUser.password;
-            this.userName = oneUser.username;
-            this.email = oneUser.email;
-            this.email = oneUser.email;
+            this.name = user.name;
+            this.proPic = user.pic;
+            this.pass = user.password;
+            this.userName = user.username;
+            this.email = user.email;
+            this.email = user.email;
             this.todolist = [];
 
-            var User = this;
+            var Users = this;
 
-            oneUser.todolist.forEach(function (todo) {
-                return ( User.todolist.push(new Todo(todo)) );
+            todoModel (user.todolist, Users.todolist);
+        }
+
+        function todoModel (rawTodolist, todolist ) {
+            rawTodolist.forEach(function (todo) {
+                return ( todolist.push(new Todo(todo)) );
             })
         }
 

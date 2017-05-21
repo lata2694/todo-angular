@@ -18,7 +18,7 @@ function filterFactory($log, modelFactory) {
 
     function getUser() {
         return modelFactory
-            .getData()
+            .modeling()
             .then(function (user) {
                 return ( gettingTodo(user) );
             });

@@ -139,10 +139,10 @@ home-directive {
       right: -3px;
       left: auto; }
     home-directive section .thumb {
-      top: -20px;
+      top: -8px;
       position: absolute;
-      left: -30px;
-      width: 8%; }
+      left: -15px;
+      width: 5%; }
     home-directive section table {
       width: 100%; }
       home-directive section table .completed, home-directive section table .incomplete {

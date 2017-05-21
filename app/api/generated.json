@@ -105,7 +105,7 @@
       "name": "Vaibhav",
       "pic": "assets/images/user1.png",
       "password": "pass",
-      "username": "vaibhav",
+      "username": "Vaibhav",
       "email": "e@domain.com",
       "todolist": [
         {
@@ -138,7 +138,7 @@
       "name": "Gaurav",
       "pic": "assets/images/user1.png",
       "password": "pass",
-      "username": "gaurav",
+      "username": "Gaurav",
       "email": "g@domain.com",
       "todolist": [
         {
@@ -195,7 +195,7 @@
       "name": "Karan",
       "pic": "assets/images/user1.png",
       "password": "pass",
-      "username": "karan",
+      "username": "Karan",
       "email": "k@domain.com",
       "todolist": [
         {

@@ -5,18 +5,20 @@
 angular.module('app')
     .directive('homeDirective', homeDirective);
 
+
 function homeDirective() {
     return {
         restrict: 'E',
-        scope: false,
+        scope: {},
         templateUrl: "./components/home/home.html",
         controller: HomeController,
         controllerAs: 'vm',
-        bindToController: true
+        // bindToController: true
         /*because the scope is isolated;
          when using "controller as" syntax with a directive when you want to bind the outer scope to the directive's controller's scope.*/
     };
 }
+
 
 HomeController.$inject = ['$log', 'limitFactory', 'filterFactory'];
 
@@ -47,3 +49,4 @@ function HomeController($log, limitFactory, filterFactory) {
     }
 
 }
+

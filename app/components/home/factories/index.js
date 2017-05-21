@@ -5,3 +5,4 @@
 var dataFactory = require ( './dataFactory' ) ;
 var modelFactory = require ( './modelFactory' ) ;
 var filterFactory = require ( './filterFactory' ) ;
+var limitFactory = require ( './limitFactory' ) ;

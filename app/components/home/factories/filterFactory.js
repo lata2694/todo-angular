@@ -11,7 +11,9 @@ function filterFactory($log, modelFactory) {
 
     $log.debug("hi i'm filter factory and i'm working");
     var service = {};
+    service.cache = [];
     service.getUser = getUser;
+    service.getUserInfo = getUserInfo;
     return service;
 
     ////////////////////////////////////////////////////
@@ -20,9 +22,23 @@ function filterFactory($log, modelFactory) {
         return modelFactory
             .modeling()
             .then(function (user) {
-                return ( gettingTodo(user) );
+                service.cache = gettingTodo(user);
+                return service.cache;
             });
     }
+
+    function getUserInfo(id) {
+        return detailInfo(service.cache, parseInt(id));
+    }
+
+    function detailInfo(userInfo, id) {
+        var user = userInfo.filter(function (user) {
+            if (user.id === id)
+                return user;
+        });
+        return user;
+    }
+
 
     function gettingTodo(user) {
 

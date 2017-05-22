@@ -2,20 +2,24 @@
 
     <div class="profile-pic">
         <div>
-            {{propic}}
+            <img src={{vm.user.proPic}} alt="Profile pic">
         </div>
-        <p>{{username}}</p>
-        <p>{{email}}</p>
+        <p>{{vm.user.username}}</p>
+        <p>{{vm.user.email}}</p>
     </div>
 
     <div class="complete-todos">
         <h2>Completed Tasks</h2>
-        <li>{{list}}</li>
+        <li ng-repeat="complete in vm.user.todolist.complete track by $index">
+            {{ complete.title }}
+        </li>
     </div>
 
     <div class="incomplete-todos">
         <h2> Incompleted Tasks</h2>
-        <li>{{list}}</li>
+        <li ng-repeat="incomplete in vm.user.todolist.incomplete track by $index">
+            {{ incomplete.title }}
+        </li>
     </div>
 
 </div>

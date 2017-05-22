@@ -1,4 +1,4 @@
-<div>
+<div class="homeDirective">
     <section ng-repeat="user in vm.user track by $index">
         <img src="../../assets/images/thumb.png" alt="" class="thumb">
         <table>
@@ -18,7 +18,7 @@
                     <a target="_blank" href={{user.proPic}}>
                         <img src={{user.proPic}} alt="Profile pic">
                     </a>
-                    <p><a href="">{{ user.userName }}</a></p>
+                    <p><a ui-sref="/profile ({ id:user.id })" href="">{{ user.userName }}</a></p>
                 </td>
 
                 <td class="todo-list">

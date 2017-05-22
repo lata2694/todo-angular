@@ -93,7 +93,7 @@ header-directive {
       padding-right: 20px;
       border-right: 1px solid; }
 
-home-directive {
+.homeDirective {
   display: table;
   content: '';
   clear: both;
@@ -105,7 +105,7 @@ home-directive {
   padding-bottom: 10px;
   padding-right: 0px;
   margin-top: 120px; }
-  home-directive section {
+  .homeDirective section {
     padding: 20px;
     box-sizing: border-box;
     border-top-left-radius: 40px;
@@ -113,7 +113,7 @@ home-directive {
     border: 5px solid #098f92;
     margin: 10px 0;
     position: relative; }
-    home-directive section::before {
+    .homeDirective section::before {
       width: 50%;
       top: 80%;
       max-width: 300px;
@@ -125,7 +125,7 @@ home-directive {
       bottom: 8px;
       left: -2px;
       transform: rotate(-4deg); }
-    home-directive section::after {
+    .homeDirective section::after {
       width: 50%;
       top: 80%;
       max-width: 300px;
@@ -138,37 +138,37 @@ home-directive {
       transform: rotate(4deg);
       right: -3px;
       left: auto; }
-    home-directive section .thumb {
+    .homeDirective section .thumb {
       top: -8px;
       position: absolute;
       left: -15px;
       width: 5%; }
-    home-directive section table {
+    .homeDirective section table {
       width: 100%; }
-      home-directive section table .completed, home-directive section table .incomplete {
+      .homeDirective section table .completed, .homeDirective section table .incomplete {
         font-size: 20px;
         text-align: left;
         color: darkgreen;
         font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; }
-      home-directive section table .incomplete {
+      .homeDirective section table .incomplete {
         color: red; }
-      home-directive section table .user-info {
+      .homeDirective section table .user-info {
         text-align: center;
         vertical-align: middle; }
-        home-directive section table .user-info img {
+        .homeDirective section table .user-info img {
           display: inline-block;
           border-radius: 50%;
           width: 26%; }
-        home-directive section table .user-info a {
+        .homeDirective section table .user-info a {
           font-weight: bold;
           font-size: 25px; }
-      home-directive section table .todo-list {
+      .homeDirective section table .todo-list {
         padding: 15px; }
-    home-directive section td li {
+    .homeDirective section td li {
       margin-bottom: 5px;
       text-align: left;
       font-size: 18px; }
-  home-directive button {
+  .homeDirective button {
     border: 2px solid cadetblue;
     background: #098f92;
     padding: 10px;
@@ -220,5 +220,40 @@ footer-directive {
         color: red; }
   footer-directive .copyright p {
     margin: 10px; }
+
+.sign-in-wrapper {
+  margin: 0 auto;
+  padding: 25px 0 0;
+  text-align: center;
+  width: 100%;
+  border: 1px solid ghostwhite;
+  box-shadow: 0px 5px 5px lightgrey; }
+  .sign-in-wrapper form {
+    margin: 0 20px; }
+    .sign-in-wrapper form label {
+      display: block;
+      margin: 10px auto; }
+    .sign-in-wrapper form input[type="text"], .sign-in-wrapper form input[type="password"] {
+      border-radius: 3px;
+      border: 1px solid #c8c8c8;
+      color: #777;
+      margin: 0 0 10px;
+      padding: 15px 10px 15px 40px;
+      width: 80%; }
+      .sign-in-wrapper form input[type="text"]:focus, .sign-in-wrapper form input[type="password"]:focus {
+        box-shadow: 0 0 2px #44c2fc inset;
+        background-color: #fff;
+        border: 1px solid #44c2fc; }
+  .sign-in-wrapper input[type="submit"] {
+    background: #44c2fc;
+    box-shadow: -2px 3px 3px black;
+    border-radius: 30px;
+    border: 1px solid #44c2fc;
+    cursor: pointer;
+    height: 35px;
+    margin: 20px 0 35px 15px;
+    position: relative;
+    width: 120px;
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */

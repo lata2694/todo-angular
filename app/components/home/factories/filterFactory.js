@@ -13,7 +13,7 @@ function filterFactory($log, modelFactory) {
     var service = {};
     service.cache = [];
     service.getUser = getUser;
-    service.getUserInfo = getUserInfo;
+    service.getCache = getCache;
     return service;
 
     ////////////////////////////////////////////////////
@@ -27,18 +27,10 @@ function filterFactory($log, modelFactory) {
             });
     }
 
-    function getUserInfo(id) {
-        return detailInfo(service.cache, parseInt(id));
-    }
 
-    function detailInfo(userInfo, id) {
-        var user = userInfo.filter(function (user) {
-            if (user.id === id)
-                return user;
-        });
-        return user;
+    function getCache() {
+        return service.cache;
     }
-
 
     function gettingTodo(user) {
 

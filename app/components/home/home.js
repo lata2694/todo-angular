@@ -1,7 +1,7 @@
 function homeRoutes(stateProvider) {
 
     stateProvider.state('/profile', {
-        url: '/profile/:id',
+        url: 'profile/:id',
         templateUrl: '/components/profile/profile.html',
         controller: 'ProfileController',
         controllerAs: 'vm'

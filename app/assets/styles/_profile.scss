@@ -1,0 +1,64 @@
+.profile {
+  background: ghostwhite;
+  @include mycontainer( 10px, 10px, 10px, 10px );
+  text-align: center;
+  margin: 200px auto;
+  @include dropshadow;
+
+  .profile-pic {
+
+    img {
+      border-radius: 50%;
+      background: antiquewhite;
+      border: 1px dashed black;
+      margin: 15px auto;
+      width: 15%;
+      display: block;
+      padding: 5px;
+      position:relative;
+    }
+
+    .user-name {
+      font-size:20px;
+    }
+
+    .email {
+      font-size:18px;
+      margin: 10px auto;
+    }
+  }
+
+  .todos {
+    padding: 20px;
+
+    .complete-todos {
+      display: inline-block;
+      padding:10px;
+      height:200px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      margin: 20px;
+      width: 30%;
+      @include dropshadow;
+      background: -webkit-linear-gradient(bottom, rgba(210,255,82,1) 96%,rgba(145,232,66,1) 100%);
+    }
+
+    .incomplete-todos {
+      @extend .complete-todos;
+      @include dropshadow;
+      background: -webkit-linear-gradient(bottom, rgba(254,187,187,1) 0%,rgba(254,144,144,1) 95%,rgba(255,92,92,1) 100%);
+    }
+
+    h2 {
+      text-decoration: underline;
+      font-weight:bold;
+      font-size:20px;
+      margin:20px auto;
+    }
+
+    li {
+      margin:10px 0px;
+      list-style-type: none;
+    }
+  }
+}

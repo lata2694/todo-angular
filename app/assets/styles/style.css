@@ -54,6 +54,17 @@ a {
   a:hover {
     color: red; }
 
+.todo-button {
+  border: 2px solid cadetblue;
+  background: #098f92;
+  padding: 10px;
+  border-radius: 40px;
+  box-shadow: 3px 3px 8px #6f6f6f;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; }
+
 header-directive {
   display: table;
   content: '';
@@ -168,16 +179,6 @@ header-directive {
       margin-bottom: 5px;
       text-align: left;
       font-size: 18px; }
-  .homeDirective button {
-    border: 2px solid cadetblue;
-    background: #098f92;
-    padding: 10px;
-    border-radius: 40px;
-    box-shadow: 3px 3px 8px #6f6f6f;
-    color: white;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto; }
 
 footer-directive {
   display: table;
@@ -222,10 +223,11 @@ footer-directive {
     margin: 10px; }
 
 .sign-in-wrapper {
-  margin: 0 auto;
+  margin: 240px auto;
   padding: 25px 0 0;
   text-align: center;
-  width: 100%;
+  width: 50%;
+  background: ghostwhite;
   border: 1px solid ghostwhite;
   box-shadow: 0px 5px 5px lightgrey; }
   .sign-in-wrapper form {
@@ -245,15 +247,60 @@ footer-directive {
         background-color: #fff;
         border: 1px solid #44c2fc; }
   .sign-in-wrapper input[type="submit"] {
-    background: #44c2fc;
-    box-shadow: -2px 3px 3px black;
-    border-radius: 30px;
-    border: 1px solid #44c2fc;
-    cursor: pointer;
-    height: 35px;
-    margin: 20px 0 35px 15px;
-    position: relative;
-    width: 120px;
-    color: white; }
+    padding: 6px 20px;
+    margin: 10px auto; }
+
+.profile {
+  background: ghostwhite;
+  box-sizing: border-box;
+  width: 92%;
+  margin: 0px auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  text-align: center;
+  margin: 200px auto;
+  border: 1px solid ghostwhite;
+  box-shadow: 0px 5px 5px lightgrey; }
+  .profile .profile-pic img {
+    border-radius: 50%;
+    background: antiquewhite;
+    border: 1px dashed black;
+    margin: 15px auto;
+    width: 15%;
+    display: block;
+    padding: 5px;
+    position: relative; }
+  .profile .profile-pic .user-name {
+    font-size: 20px; }
+  .profile .profile-pic .email {
+    font-size: 18px;
+    margin: 10px auto; }
+  .profile .todos {
+    padding: 20px; }
+    .profile .todos .complete-todos, .profile .todos .incomplete-todos {
+      display: inline-block;
+      padding: 10px;
+      height: 200px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      margin: 20px;
+      width: 30%;
+      border: 1px solid ghostwhite;
+      box-shadow: 0px 5px 5px lightgrey;
+      background: -webkit-linear-gradient(bottom, #d2ff52 96%, #91e842 100%); }
+    .profile .todos .incomplete-todos {
+      border: 1px solid ghostwhite;
+      box-shadow: 0px 5px 5px lightgrey;
+      background: -webkit-linear-gradient(bottom, #febbbb 0%, #fe9090 95%, #ff5c5c 100%); }
+    .profile .todos h2 {
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 20px auto; }
+    .profile .todos li {
+      margin: 10px 0px;
+      list-style-type: none; }
 
 /*# sourceMappingURL=style.css.map */

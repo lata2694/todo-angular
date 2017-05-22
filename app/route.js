@@ -3,6 +3,7 @@
  */
 
 var homeRoutes = require('./components/home/home');
+var headerRoutes = require('./components/header/header');
 
 function RouteConfigurations(locationProvider, stateProvider, urlRouterProvider) {
 
@@ -19,6 +20,7 @@ function RouteConfigurations(locationProvider, stateProvider, urlRouterProvider)
         });
 
     homeRoutes(stateProvider);
+    headerRoutes(stateProvider);
 }
 
 module.exports = RouteConfigurations;

@@ -4,22 +4,26 @@
         <div>
             <img src={{vm.user.proPic}} alt="Profile pic">
         </div>
-        <p>{{vm.user.username}}</p>
-        <p>{{vm.user.email}}</p>
+        <p class="user-name">{{vm.user.userName}}</p>
+        <p class="email">{{vm.user.email}}</p>
     </div>
 
-    <div class="complete-todos">
-        <h2>Completed Tasks</h2>
-        <li ng-repeat="complete in vm.user.todolist.complete track by $index">
-            {{ complete.title }}
-        </li>
-    </div>
+    <div class="todos">
 
-    <div class="incomplete-todos">
-        <h2> Incompleted Tasks</h2>
-        <li ng-repeat="incomplete in vm.user.todolist.incomplete track by $index">
-            {{ incomplete.title }}
-        </li>
+        <div class="complete-todos">
+            <h2>Completed Tasks</h2>
+            <li ng-repeat="complete in vm.user.todolist.complete track by $index">
+                {{ complete.title }}
+            </li>
+        </div>
+
+        <div class="incomplete-todos">
+            <h2> Incomplete Tasks</h2>
+            <li ng-repeat="incomplete in vm.user.todolist.incomplete track by $index">
+                {{ incomplete.title }}
+            </li>
+        </div>
+
     </div>
 
 </div>

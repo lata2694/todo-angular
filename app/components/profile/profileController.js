@@ -5,9 +5,9 @@
 angular.module("app")
         .controller('ProfileController', profileController);
 
-profileController.$inject = [ '$log', '$stateParams', 'filterFactory' ];
+profileController.$inject = [ '$log', '$stateParams', 'profileFactory' ];
 
-function profileController ( log, stateParams, filterFactory ){
+function profileController ( log, stateParams, profileFactory ){
     var vm = this;
     vm.user = '';
     gettingData();
@@ -16,7 +16,7 @@ function profileController ( log, stateParams, filterFactory ){
     /////////////////////////////////////////////
 
     function gettingData() {
-        vm.user = filterFactory.getUserInfo(stateParams.id);
+        vm.user = profileFactory.getUserInfo(stateParams.id);
         vm.user = vm.user[0];
         log.debug("particular user----", vm.user);
         return vm.user;

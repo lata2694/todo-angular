@@ -68,6 +68,18 @@ a {
   }
 }
 
+.todo-button {
+  border: 2px solid cadetblue;
+  background: $section-border;
+  padding: 10px;
+  border-radius: 40px;
+  box-shadow: 3px 3px 8px $link-color;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin:0 auto;
+}
+
 
 
 

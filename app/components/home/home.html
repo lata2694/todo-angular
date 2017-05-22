@@ -18,7 +18,7 @@
                     <a target="_blank" href={{user.proPic}}>
                         <img src={{user.proPic}} alt="Profile pic">
                     </a>
-                    <p><a ui-sref="/profile ({ id:user.id })" href="">{{ user.userName }}</a></p>
+                    <p><a ui-sref="/profile({id:user.id})" href="">{{ user.userName }}</a></p>
                 </td>
 
                 <td class="todo-list">
@@ -36,5 +36,5 @@
         </table>
     </section>
 
-    <button ng-click="vm.loadMore()" id="more-button">More Suggestions</button>
+    <button ng-click="vm.loadMore()" id="more-button" class="todo-button">More Suggestions</button>
 </div>

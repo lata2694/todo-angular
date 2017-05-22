@@ -9,6 +9,7 @@ var app = angular.module('app', ['ui.router']);
 
 var RouteConfigurations = require('./route.js');
 
+
 app.config(routeConfigurations);
 
 

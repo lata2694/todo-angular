@@ -1,3 +1,20 @@
+.sign-in-message {
+  opacity: 0.8;
+  text-align: center;
+  display: none;
+  position: relative;
+  padding: 20px;
+  width: 50%;
+  left: 320px;
+  top: 200px;
+  border-radius: 10px;
+  border:2px solid red;
+  color:white;
+  font-weight: bold;
+
+  background: -webkit-linear-gradient(top, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(240,47,23,1) 100%,rgba(246,41,12,1) 100%,rgba(231,56,39,1) 100%);
+}
+
 .sign-in-wrapper {
   margin: 240px auto;
   padding: 25px 0 0;
@@ -31,7 +48,7 @@
 
   }
 
-  input[type="submit"] {
+ button{
     padding: 6px 20px;
     margin:10px auto;
   }

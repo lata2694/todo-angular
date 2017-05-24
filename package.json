@@ -21,6 +21,7 @@
   "dependencies": {
     "angular": "^1.6.4",
     "angular-ui-router": "^1.0.3",
+    "angularjs-toaster": "^2.1.0",
     "browserify": "^14.3.0",
     "express": "^4.15.3",
     "gulp": "^3.9.1",

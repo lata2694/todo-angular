@@ -19,8 +19,15 @@ function RouteConfigurations(locationProvider, stateProvider, urlRouterProvider)
             controllerAs: "vm"
         });
 
+    stateProvider.state("/onError",{
+        url: "/error",
+        templateUrl: "../components/error/error.html",
+    });
+
     homeRoutes(stateProvider);
     headerRoutes(stateProvider);
+
+    // urlRouterProvider.otherwise('/error');
 }
 
 module.exports = RouteConfigurations;

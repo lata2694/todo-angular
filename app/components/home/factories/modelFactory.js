@@ -35,10 +35,12 @@ function modelFactory($log, dataFactory) {
         }
 
         function Users(user) {
-            this.id = (function () {
-                service.userCount = service.userCount + 1;
-                return ( service.userCount );
-            }());
+            // this.id = (function () {
+            //     service.userCount = service.userCount + 1;
+            //     return ( service.userCount );
+            // }());
+
+            this.id = user.id ;
             this.name = user.name;
             this.proPic = user.pic;
             this.pass = user.password;

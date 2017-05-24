@@ -1,10 +1,11 @@
 function homeRoutes(stateProvider) {
 
     stateProvider.state('/profile', {
-        url: 'profile/:id',
+        url: '/profile',
         templateUrl: '/components/profile/profile.html',
         controller: 'ProfileController',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        params : { 'id':null },
     });
 
 }

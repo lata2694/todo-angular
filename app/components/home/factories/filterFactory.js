@@ -29,6 +29,7 @@ function filterFactory($log, modelFactory) {
 
 
     function getCache() {
+        $log.debug("getting cache...");
         return service.cache;
     }
 

@@ -1,13 +1,16 @@
-<div>
+<div ng-controller="signInController as vm">
+
+    <toaster-container toaster-options="{'time-out': 5000}"></toaster-container>
+
     <section class="sign-in-wrapper">
-        <form action="">
+        <form>
             <label>User Name</label>
             <input type="text" placeholder="User Name" class="user-name" ng-model="vm.currentUserName" required/>
 
             <label> Password</label>
             <input type="password" placeholder="Password" class="password" ng-model="vm.currentUserPass" required/>
 
-            <input type="submit" class="todo-button" value="SIGN IN"/>
+            <button class="todo-button" ng-click="vm.checkingUser()">SIGN IN</button>
         </form>
     </section>
 </div>

@@ -12,16 +12,18 @@
 
         <div class="complete-todos">
             <h2>Completed Tasks</h2>
-            <li ng-repeat="complete in vm.user.todolist.complete track by $index">
-                {{ complete.title }}
-            </li>
+            <div ng-repeat="complete in vm.user.todolist.complete track by $index">
+                <sapn>{{ complete.title }} : </sapn>
+                <p> {{ complete.description }} </p>
+            </div>
         </div>
 
         <div class="incomplete-todos">
             <h2> Incomplete Tasks</h2>
-            <li ng-repeat="incomplete in vm.user.todolist.incomplete track by $index">
-                {{ incomplete.title }}
-            </li>
+            <div ng-repeat="incomplete in vm.user.todolist.incomplete track by $index">
+                <sapn>{{ incomplete.title }} : </sapn>
+                <p> {{ incomplete.description }} </p>
+            </div>
         </div>
 
     </div>

@@ -12,6 +12,8 @@ server = express();
 server.use(express.static('app'));
 
 server.get('/',function (req,res) {
-    res.sendFile( '.index.html' );
+    res.sendFile( __dirname+'/app/index.html' );
 });
-server.listen(3000);
+
+
+server.listen(9000);

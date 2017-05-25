@@ -5,21 +5,22 @@
 angular.module('app')
     .factory('signInFactory', signInFactory);
 
-signInFactory.$inject = ['$log', 'filterFactory'];
+signInFactory.$inject = ['$log', 'filterFactory', 'SignInProcess'];
 
-function signInFactory ($log, filterFactory) {
+function signInFactory ($log, filterFactory, SignInProcess) {
 
     var service = {};
 
-    var cache = filterFactory.getCache();
+    var cache = "";
     service.authentication = authentication;
     return service;
 
     /////////////////////////////////////////
 
     function authentication(name, password) {
-
+        cache = filterFactory.getCache();
         $log.debug("trying to authenticate the user");
+        $log.debug("cache-----", cache);
 
             var  activeUser = cache.filter(
             function filterBy( user ) {
@@ -29,6 +30,8 @@ function signInFactory ($log, filterFactory) {
                 );
             });
         $log.debug("active User--------", activeUser);
+
+        SignInProcess.updating( activeUser );
 
         return activeUser;
     }

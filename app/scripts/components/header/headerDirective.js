@@ -8,7 +8,7 @@ angular.module ( 'app' )
 function headerDirective () {
     return {
         restrict: 'E',
-        templateUrl: "./components/header/header.html",
+        templateUrl: "./scripts/components/header/header.html",
         controller: 'HeaderController',
         controllerAs: 'vm',
     };

@@ -8,6 +8,6 @@ angular.module ( 'app' )
 function footerDirective () {
     return {
         restrict: 'E',
-        templateUrl: "./components/footer/footer.html",
+        templateUrl: "./scripts/components/footer/footer.html",
     };
 }

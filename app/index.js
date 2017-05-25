@@ -3,6 +3,6 @@
  */
 
 require("angular-ui-router");
+require ( 'angularjs-toaster' );
 require ( './app.config.js' );
-require ( './constants/apiConstant' ) ;
-require ( './components/index' );
+require ( './scripts/index' );

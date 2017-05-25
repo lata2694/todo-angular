@@ -5,7 +5,7 @@
 
 //Use constants for values that do not change and do not come from another service.
 var api = {
-    "url" : "../api/generated.json",
+    "url" : "../../api/generated.json",
     } ;
 
 angular.module ( 'app' )

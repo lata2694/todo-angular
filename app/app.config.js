@@ -5,7 +5,6 @@
 'use strict';
 
 var angular = require('angular');
-require ( 'angularjs-toaster' );
 var app = angular.module('app', ['ui.router', 'toaster']);
 
 var RouteConfigurations = require('./route.js');

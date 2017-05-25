@@ -2,10 +2,12 @@
  * Created by Lata Tiwari on 5/21/2017.
  */
 
-var homeRoutes = require('./components/home/home');
-var headerRoutes = require('./components/header/header');
+var homeRoutes = require('./scripts/components/home/home');
+var headerRoutes = require('./scripts/components/header/header');
 
 function RouteConfigurations(locationProvider, stateProvider, urlRouterProvider) {
+
+    urlRouterProvider.otherwise("/error");
 
     locationProvider.html5Mode({
         enabled: true,
@@ -14,14 +16,14 @@ function RouteConfigurations(locationProvider, stateProvider, urlRouterProvider)
 
     stateProvider.state("/",{
             url: "/",
-            templateUrl: "components/home/home.html",
+            templateUrl: "scripts/components/home/home.html",
             controller: 'HomeController',
             controllerAs: "vm"
         });
 
     stateProvider.state("/onError",{
         url: "/error",
-        templateUrl: "../components/error/error.html",
+        templateUrl: "scripts/components/error/error.html",
     });
 
     homeRoutes(stateProvider);

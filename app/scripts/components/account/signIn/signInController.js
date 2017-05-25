@@ -4,9 +4,9 @@
 angular.module('app')
     .controller('signInController', signInController);
 
-signInController.$inject = ['$log', 'signInFactory', '$state', 'toaster'];
+signInController.$inject = ['$log', 'signInFactory', '$state', 'toaster', 'SignInProcess'];
 
-function signInController($log, signInFactory, $state, toaster) {
+function signInController($log, signInFactory, $state, toaster, SignInProcess) {
     var vm = this;
     vm.activeUser = '';
     vm.message = " ";
@@ -27,19 +27,22 @@ function signInController($log, signInFactory, $state, toaster) {
             toaster.pop({
                 type: 'warning',
                 title: 'Make sure to Sign Up',
-                body: "Something's wrong. Please try again" ,
+                body: "Something's wrong. Please try again",
                 showCloseButton: true
             });
 
         } else {
             vm.activeUser = authenticatedUser[0];
             $log.debug("logged in user----------", vm.activeUser);
-            redirect('/');
+
+            // redirect('/profile', vm.activeUser.id);
         }
 
     }
 
-    function redirect(where) {
-        $state.go(where);
-    }
+    // function redirect(where, to) {
+    //     $state.go(where, {id: to});
+    // }
 }
+
+

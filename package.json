@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run UI && node server.js",
     "UI": "browserify app -o app/build/bundle.js"
   },
   "repository": {

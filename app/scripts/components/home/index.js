@@ -1,4 +1,4 @@
 
 require("./homeDirective");
-require("./factories");
+require("./factories/index");
 require("./homeController");

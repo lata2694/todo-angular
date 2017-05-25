@@ -2,7 +2,7 @@ function homeRoutes(stateProvider) {
 
     stateProvider.state('/profile', {
         url: '/profile',
-        templateUrl: '/components/profile/profile.html',
+        templateUrl: '/scripts/components/profile/profile.html',
         controller: 'ProfileController',
         controllerAs: 'vm',
         params : { 'id':null },

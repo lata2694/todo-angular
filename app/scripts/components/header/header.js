@@ -5,7 +5,7 @@ function headerRoutes(stateProvider) {
 
     stateProvider.state('/signIn', {
         url: '/signIn',
-        templateUrl: '/components/account/signIn/signIn.html',
+        templateUrl: '/scripts/components/account/signIn/signIn.html',
         controller: 'ProfileController',
         controllerAs: 'vm'
     });

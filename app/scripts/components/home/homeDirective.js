@@ -10,7 +10,7 @@ function homeDirective() {
     return {
         restrict: 'E',
         scope: {},
-        templateUrl: "./components/home/home.html",
+        templateUrl: "./scripts/components/home/home.html",
         controller: "HomeController",
         controllerAs: 'vm'
     };

@@ -112,12 +112,16 @@ header-directive {
       margin-right: -160px;
       width: 25%;
       border-radius: 50%; }
-    header-directive nav .user-name {
+    header-directive nav .user-name, header-directive nav .home-tab {
       padding-right: 8px;
       border-right: 1px solid black;
       display: block;
       float: right;
       font-size: 20px; }
+    header-directive nav .home-tab {
+      line-height: 13px;
+      font-size: 17px;
+      padding-right: 13px; }
 
 .homeDirective {
   display: table;
@@ -302,7 +306,7 @@ footer-directive {
     display: block;
     padding: 5px;
     position: relative; }
-  .profile .profile-pic .user-name {
+  .profile .profile-pic .user-name, .profile .profile-pic header-directive nav .home-tab, header-directive nav .profile .profile-pic .home-tab {
     font-size: 20px; }
   .profile .profile-pic .email {
     font-size: 18px;

@@ -17,13 +17,28 @@ function headerController($log, signInFactory, SignInProcess) {
         callback: authorizedUser
     });
 
+
     function authorizedUser ( user ) {
+
+        if( user.length == 0 ) {
+            $log.debug("inside header controller's if" );
+            $log.debug("user----", user);
+            signOut();
+        }
+
+        else {
+            $log.debug("inside header controller's else" );
+            signIn(  user );
+        }
+    }
+
+    function signIn ( user ) {
         vm.authorized = true;
         vm.activeuser = user[0];
         $log.debug("user in header controller is----", vm.activeuser);
     }
 
     function signOut () {
-        vm.authorized = !vm.authorized;
+        vm.authorized = false;
     }
 }

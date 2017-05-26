@@ -4,5 +4,6 @@
 
 require("angular-ui-router");
 require ( 'angularjs-toaster' );
+require ( 'ng-ui-router-state-events' );
 require ( './app.config.js' );
 require ( './scripts/index' );

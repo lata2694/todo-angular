@@ -35,14 +35,14 @@ function signInController($log, signInFactory, $state, toaster, SignInProcess) {
             vm.activeUser = authenticatedUser[0];
             $log.debug("logged in user----------", vm.activeUser);
 
-            // redirect('/profile', vm.activeUser.id);
+            redirect('/profile', vm.activeUser.id);
         }
 
     }
 
-    // function redirect(where, to) {
-    //     $state.go(where, {id: to});
-    // }
+    function redirect(where, to) {
+        $state.go(where, {id: to});
+    }
 }
 
 

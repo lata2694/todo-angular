@@ -20,6 +20,7 @@
   "dependencies": {
     "angular": "^1.6.4",
     "angular-ui-router": "^1.0.3",
+    "angular-unsavedchanges": "^0.2.5",
     "angularjs-toaster": "^2.1.0",
     "browserify": "^14.3.0",
     "express": "^4.15.3",
@@ -33,6 +34,7 @@
     "gulp-uglify": "^2.1.2",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.11",
+    "ng-ui-router-state-events": "^1.0.1",
     "ui-router": "^1.0.0-alpha.3"
   }
 }

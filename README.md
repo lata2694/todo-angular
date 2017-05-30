@@ -1,5 +1,5 @@
 # todo-angular
-fetch the repo.
+fork/clone the repo.
 install dependencies mentioned in package.json
 run gulp
 run command: npm run UI (will work for now).

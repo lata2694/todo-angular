@@ -9,8 +9,8 @@ signInController.$inject = ['$log', 'signInFactory', '$state', 'toaster', 'SignI
 function signInController($log, signInFactory, $state, toaster, SignInProcess) {
     var vm = this;
     vm.activeUser = '';
-    vm.message = " ";
     vm.checkingUser = checkingUser;
+    vm.message = " ";
 
     ///////////////////////////////////////
 

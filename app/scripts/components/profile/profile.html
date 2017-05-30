@@ -8,24 +8,53 @@
         <p class="email">{{vm.user.email}}</p>
     </div>
 
+    <div class="add-button" ng-if=" vm.activeUser.authorized == true">
+        <button class="todo-button">Add More Tasks</button>
+    </div>
+
     <div class="todos">
 
         <div class="complete-todos">
+
             <h2>Completed Tasks</h2>
-            <div ng-repeat="complete in vm.user.todolist.complete track by $index">
-                <sapn>{{ complete.title }} : </sapn>
+
+            <div  class="todo-details"
+                  ng-repeat="complete in vm.user.todolist.complete track by $index"
+                  draggable="true"
+                  ondragstart="drag(event)">
+
+                <span>{{ complete.title }} : </span>
                 <p> {{ complete.description }} </p>
+                <options-directive ng-if="vm.activeUser.authorized == true"></options-directive>
+
             </div>
+
         </div>
 
         <div class="incomplete-todos">
+
             <h2> Incomplete Tasks</h2>
-            <div ng-repeat="incomplete in vm.user.todolist.incomplete track by $index">
-                <sapn>{{ incomplete.title }} : </sapn>
+
+            <div  class="todo-details"
+                  ng-repeat="incomplete in vm.user.todolist.incomplete track by $index"
+                  draggable="true"
+                  ondragstart="drag(event)">
+
+                <span>{{ incomplete.title }} : </span>
                 <p> {{ incomplete.description }} </p>
+                <options-directive ng-if="vm.activeUser.authorized == true"></options-directive>
+
             </div>
+
         </div>
 
+    </div>
+    
+    <div class="delete" ng-if="vm.activeUser.authorized == true">
+        <img class="trash-can" src="../../../assets/images/delete.png"
+             alt="delete-todo"
+             ondrop="drop(event)"
+             ondragover="allowDrop(event)">
     </div>
 
 </div>

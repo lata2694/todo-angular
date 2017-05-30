@@ -4,6 +4,7 @@
   text-align: center;
   margin: 200px auto;
   @include dropshadow;
+  position: relative;
 
   .profile-pic {
 
@@ -28,25 +29,54 @@
     }
   }
 
+  .add-button {
+    margin:20px;
+
+    .todo-button {
+      width:30%;
+    }
+  }
+
   .todos {
     padding: 20px;
+
+    span {
+      font-weight: bold;
+      font-style: oblique;
+    }
+
+    .todo-details {
+      border-bottom: 1px solid black;
+      padding: 10px;
+      @include clearfix();
+      width:93%;
+    }
 
     .complete-todos {
       display: inline-block;
       padding:10px;
-      height:200px;
+      height:500px;
       overflow-x: hidden;
-      //overflow-y: scroll;
+      overflow-y: scroll;
       margin: 20px;
       width: 30%;
       @include dropshadow;
       background: -webkit-linear-gradient(bottom, rgba(210,255,82,1) 96%,rgba(145,232,66,1) 100%);
+
+      h2 {
+        color:darkgreen;
+      }
     }
 
     .incomplete-todos {
       @extend .complete-todos;
       @include dropshadow;
       background: -webkit-linear-gradient(bottom, rgba(254,187,187,1) 0%,rgba(254,144,144,1) 95%,rgba(255,92,92,1) 100%);
+
+
+      h2 {
+        color:darkred;
+      }
     }
 
     h2 {
@@ -59,6 +89,17 @@
     li {
       margin:10px 0px;
       list-style-type: none;
+    }
+  }
+
+  .delete {
+    width: 18%;
+    bottom: 36px;
+    position: absolute;
+    right: 0px;
+
+    .trash-can {
+      width: 59%;
     }
   }
 }

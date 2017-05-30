@@ -7,7 +7,7 @@ angular.module('app')
 
 filterFactory.$inject = ['$log', 'modelFactory'];
 
-function filterFactory($log, modelFactory) {
+function filterFactory($log, modelFactory ) {
 
     $log.debug("hi i'm filter factory and i'm working");
     var service = {};
@@ -18,6 +18,11 @@ function filterFactory($log, modelFactory) {
 
     ////////////////////////////////////////////////////
 
+    function getCache() {
+        $log.debug("getting cache...");
+        return service.cache;
+    }
+
     function getUser() {
         return modelFactory
             .modeling()
@@ -25,12 +30,6 @@ function filterFactory($log, modelFactory) {
                 service.cache = gettingTodo(user);
                 return service.cache;
             });
-    }
-
-
-    function getCache() {
-        $log.debug("getting cache...");
-        return service.cache;
     }
 
     function gettingTodo(user) {
@@ -69,5 +68,4 @@ function filterFactory($log, modelFactory) {
 
         return ( oneUser.todolist );
     }
-
 }

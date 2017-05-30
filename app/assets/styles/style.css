@@ -296,7 +296,8 @@ footer-directive {
   text-align: center;
   margin: 200px auto;
   border: 1px solid ghostwhite;
-  box-shadow: 0px 5px 5px lightgrey; }
+  box-shadow: 0px 5px 5px lightgrey;
+  position: relative; }
   .profile .profile-pic img {
     border-radius: 50%;
     background: antiquewhite;
@@ -311,22 +312,41 @@ footer-directive {
   .profile .profile-pic .email {
     font-size: 18px;
     margin: 10px auto; }
+  .profile .add-button {
+    margin: 20px; }
+    .profile .add-button .todo-button {
+      width: 30%; }
   .profile .todos {
     padding: 20px; }
+    .profile .todos span {
+      font-weight: bold;
+      font-style: oblique; }
+    .profile .todos .todo-details {
+      border-bottom: 1px solid black;
+      padding: 10px;
+      display: table;
+      content: '';
+      clear: both;
+      width: 93%; }
     .profile .todos .complete-todos, .profile .todos .incomplete-todos {
       display: inline-block;
       padding: 10px;
-      height: 200px;
+      height: 500px;
       overflow-x: hidden;
+      overflow-y: scroll;
       margin: 20px;
       width: 30%;
       border: 1px solid ghostwhite;
       box-shadow: 0px 5px 5px lightgrey;
       background: -webkit-linear-gradient(bottom, #d2ff52 96%, #91e842 100%); }
+      .profile .todos .complete-todos h2, .profile .todos .incomplete-todos h2 {
+        color: darkgreen; }
     .profile .todos .incomplete-todos {
       border: 1px solid ghostwhite;
       box-shadow: 0px 5px 5px lightgrey;
       background: -webkit-linear-gradient(bottom, #febbbb 0%, #fe9090 95%, #ff5c5c 100%); }
+      .profile .todos .incomplete-todos h2 {
+        color: darkred; }
     .profile .todos h2 {
       text-decoration: underline;
       font-weight: bold;
@@ -335,6 +355,13 @@ footer-directive {
     .profile .todos li {
       margin: 10px 0px;
       list-style-type: none; }
+  .profile .delete {
+    width: 18%;
+    bottom: 36px;
+    position: absolute;
+    right: 0px; }
+    .profile .delete .trash-can {
+      width: 59%; }
 
 .error img {
   width: 50%;
@@ -546,5 +573,26 @@ button.toast-close-button {
 
 :not(.no-enter)#toast-container > div.ng-enter {
   opacity: 0; }
+
+.options .list, .options footer-directive .link, footer-directive .options .link {
+  display: table;
+  content: '';
+  clear: both;
+  margin: 0 auto; }
+  .options .list li, .options footer-directive .link li, footer-directive .options .link li {
+    margin: 10px; }
+.options a {
+  display: block;
+  padding: 12px; }
+.options .icon-edit {
+  background: url("../../assets/images/options/sprite.png") 25px 100px;
+  width: 25px;
+  height: 25px;
+  background-size: cover; }
+.options .icon-check {
+  background: url("../../assets/images/options/sprite.png") 0px 100px;
+  width: 25px;
+  height: 25px;
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */

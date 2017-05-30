@@ -4,9 +4,9 @@
 angular.module('app')
     .controller('HeaderController', headerController);
 
-headerController.$inject = ['$log' ,'signInFactory', 'SignInProcess'];
+headerController.$inject = ['$log' ,'signInFactory', 'SignInProcess', 'AuthorizedFactory'];
 
-function headerController($log, signInFactory, SignInProcess) {
+function headerController($log, signInFactory, SignInProcess, AuthorizedFactory) {
     var vm = this;
     vm.authorized = false;
     vm.signOut = signOut;
@@ -19,17 +19,9 @@ function headerController($log, signInFactory, SignInProcess) {
 
 
     function authorizedUser ( user ) {
-
-        if( user.length == 0 ) {
-            $log.debug("inside header controller's if" );
-            $log.debug("user----", user);
-            signOut();
-        }
-
-        else {
-            $log.debug("inside header controller's else" );
-            signIn(  user );
-        }
+        ( user.length == 0 ) ? signOut() : signIn(  user );
+        // AuthorizedFactory.setAuthorized(user.id);
+        AuthorizedFactory.setAuthorized(vm.authorized, user.id);
     }
 
     function signIn ( user ) {

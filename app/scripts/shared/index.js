@@ -3,3 +3,4 @@
  */
 
 require('./signInProcess');
+require('./authorizedFactory');

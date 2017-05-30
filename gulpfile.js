@@ -12,6 +12,17 @@ var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
 var htmlmin = require('gulp-htmlmin');
 var gutil = require('gulp-util');
+var spritesmith = require('gulp.spritesmith');
+
+gulp.task('sprite', function () {
+    var spriteData = gulp.src('./app/assets/images/options/*.png')
+        .pipe(spritesmith({
+        imgName: 'sprite.png',
+        cssName: '_sprite.scss'
+    }));
+    spriteData.img.pipe(gulp.dest('./app/assets/images/options/')); // output path for the sprite
+    spriteData.css.pipe(gulp.dest('./app/assets/styles/')); // output path for the CSS
+});
 
 gulp.task('html', function() {
     return gulp.src('./app/**/*.html')

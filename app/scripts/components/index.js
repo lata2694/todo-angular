@@ -7,3 +7,4 @@ require('./home/index');
 require ('./account/signIn/index');
 require('./footer/index');
 require('./profile/index');
+require('./options/index');

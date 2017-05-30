@@ -34,6 +34,7 @@
     "gulp-uglify": "^2.1.2",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.11",
+    "gulp.spritesmith": "^6.5.0",
     "ng-ui-router-state-events": "^1.0.1",
     "ui-router": "^1.0.0-alpha.3"
   }

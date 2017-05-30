@@ -10,9 +10,8 @@ signInFactory.$inject = ['$log', 'filterFactory', 'SignInProcess'];
 function signInFactory ($log, filterFactory, SignInProcess) {
 
     var service = {};
-
-    var cache = "";
     service.authentication = authentication;
+    var cache = "";
     return service;
 
     /////////////////////////////////////////
@@ -31,7 +30,7 @@ function signInFactory ($log, filterFactory, SignInProcess) {
             });
         $log.debug("active User--------", activeUser);
 
-        SignInProcess.updating( activeUser );
+        SignInProcess.updating( activeUser ); //updating listener
 
         return activeUser;
     }

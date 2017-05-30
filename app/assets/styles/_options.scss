@@ -1,0 +1,25 @@
+.options {
+
+  .list {
+    @include clearfix();
+    margin:0 auto;
+
+    li {
+      margin:10px;
+    }
+  }
+
+  a {
+    display: block;
+    padding:12px;
+  }
+
+  .icon-edit {
+    @include options(100px, 25px, $options-width, $options-height);
+  }
+
+  .icon-check {
+    @include options(100px, 0px, $options-width, $options-height);
+  }
+
+}
